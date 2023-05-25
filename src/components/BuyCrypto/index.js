@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import { Box, Text, useColorModeValue } from "@chakra-ui/react";
 
 export default function BuyCrypto() {
@@ -15,7 +15,7 @@ export default function BuyCrypto() {
         decoration="lightblue"
         textTransform="uppercase"
       >
-        Buy Cryptocurrencies
+      <p> Buy Crypto currencies </p>
       </Text>
       <Box alignItems="center">
         <Box

@@ -1,4 +1,5 @@
 import NextDocument, { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 class Document extends NextDocument {
   render() {
@@ -11,6 +12,7 @@ class Document extends NextDocument {
           />
           <link rel="icon" href="/icons/favicon.ico" />
         </Head>
+        <Script src="//code.tidio.co/zpidy7bujlddcr3qtjvqs5djijuu5mzs.js" async></Script>
         <body>
           <Main />
           <NextScript />
