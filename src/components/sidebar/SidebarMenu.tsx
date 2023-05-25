@@ -18,24 +18,24 @@ const SidebarMenu: React.FC<SidebarMenuProps> = () => {
       <SidebarMenuItem Icon={HomeRoundedIcon} paths={["/"]} tooltip="Home" />
       <SidebarMenuItem
         Icon={ShoppingCartRoundedIcon}
-        paths={["/cart"]}
+        paths={[""]}
         tooltip="Cart"
         count={cartTotalItems}
       />
       <SidebarMenuItem
         Icon={BookmarksRoundedIcon}
-        paths={["/bookmarks"]}
+        paths={[""]}
         tooltip="Bookmarks"
         count={totalBookmarks}
       />
       <SidebarMenuItem
         Icon={WatchLaterRoundedIcon}
-        paths={["/orders"]}
+        paths={[""]}
         tooltip="Orders"
       />
       <SidebarMenuItem
         Icon={MonetizationOnRounded}
-        paths={["/transak"]}
+        paths={[""]}
         tooltip="Buy Crypto"
       />
     </div>
