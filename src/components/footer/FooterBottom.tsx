@@ -16,14 +16,14 @@ const FooterBottom: React.FC<FooterBottomProps> = () => {
         alt="logo"
       />
       <span className="text-sm whitespace-nowrap opacity-75 ml-4">
-        &copy; 2020 | Developed by{" "}
+        &copy; 2023 | Developed by{" "}
         <a
           href="https://github.com/laurenkumar/"
           className="text-white transition-all duration-200 
           border-b border-dotted border-white
           hover:text-[#59629e] hover:border-[#59629e]"
         >
-          LaurenKumar
+          LeetMinds
         </a>
       </span>
     </div>

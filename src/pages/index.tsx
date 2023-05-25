@@ -20,7 +20,7 @@ const Home: React.FC<HomeProps> = () => {
   return (
     <>
       <Head>
-        <title>DeFiMarket</title>
+        <title>BlockMart</title>
       </Head>
       <HomePage />
     </>

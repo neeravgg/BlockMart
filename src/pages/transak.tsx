@@ -6,10 +6,10 @@ export default function Transak() {
   return (
     <>
       <Head>
-        <title>DefiMarket - Buy Crypto </title>
+        <title>BlockMart - Buy Crypto </title>
         <meta
           name="description"
-          content="DefiMarket, buy any crypto via the Transak tool"
+          content="BlockMart, buy any crypto via the Transak tool"
         />
       </Head>
       <BuyCrypto />
