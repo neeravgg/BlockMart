@@ -12,8 +12,7 @@ interface ProductProps {
 }
 
 const Product: React.FC<ProductProps> = ({ product }) => {
-  const { loadProduct, selectedProduct, removeSelectedProduct } =
-    useStore().productStore;
+  const { loadProduct } = useStore().productStore;
   const router = useRouter();
 
   return (
