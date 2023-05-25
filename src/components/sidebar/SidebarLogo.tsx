@@ -1,5 +1,4 @@
 import { observer } from "mobx-react-lite";
-import Link from "next/link";
 import { useStore } from "stores/store";
 
 interface SidebarLogoProps {}
