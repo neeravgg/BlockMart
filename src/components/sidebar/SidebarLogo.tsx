@@ -10,7 +10,7 @@ const SidebarLogo: React.FC<SidebarLogoProps> = () => {
     // eslint-disable-next-line @next/next/no-img-element
     <img
       loading="lazy"
-      src="/icons/icon.svg"
+      src="/icons/icon.jpg"
       alt="icon"
       onClick={toggleSidebar}
       className={`w-10 sm:w-8 z-20 transition-all duration-200
