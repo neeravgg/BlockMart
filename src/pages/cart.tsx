@@ -9,7 +9,7 @@ const Cart: React.FC<CartProps> = () => {
   return (
     <>
       <Head>
-        <title>Cart</title>
+        {/* <title>Cart</title> */}
       </Head>
       <CartPage />
     </>
