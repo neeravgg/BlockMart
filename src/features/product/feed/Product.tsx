@@ -17,29 +17,31 @@ const Product: React.FC<ProductProps> = ({ product }) => {
   const router = useRouter();
 
   return (
-    <motion.div
-      initial="initial"
-      animate="in"
-      exit="out"
-      variants={pageZoom}
-      transition={pageTransition}
-      layout
-      onClick={async () => {
-        await loadProduct(product.id);
-
-        if (selectedProduct?.id !== product.id) {
-          removeSelectedProduct();
+    <>
+      <motion.div
+        className="w-3/4 bg-[#1a1a2c] rounded-lg shadow-md flex flex-col
+      transition-all duration-200 transform hover:scale-150 hover:shadow-lg  cursor-pointer"
+        initial="initial"
+        animate="in"
+        exit="out"
+        variants={pageZoom}
+        transition={pageTransition}
+        layout
+        onClick={async () => {
           await loadProduct(product.id);
-        }
 
-        router.push(`/product/${product.id}`);
-      }}
-      className="w-3/4 bg-[#1a1a2c] rounded-lg shadow-md flex flex-col
-      transition-all duration-200 transform hover:scale-105 hover:shadow-lg"
-    >
-      <ProductImage product={product} />
-      <ProductInfo product={product} />
-    </motion.div>
+          if (selectedProduct?.id !== product.id) {
+            removeSelectedProduct();
+            await loadProduct(product.id);
+          }
+
+          router.push(`/product/${product.id}`);
+        }}
+      >
+        <ProductImage product={product} />
+        <ProductInfo product={product} />
+      </motion.div>
+    </>
   );
 };
 
