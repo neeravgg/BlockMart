@@ -1,11 +1,11 @@
 <h1 align="center">
   <br />
-  DeFiMartket
+     Block.Mart
   <br />
 </h1>
 
 <h4 align="center">
-   DeFiMarket, a decentralized marketplace created with Next.JS</a>.
+   Block.Mart, a decentralized marketplace created with Next.JS</a>.
 </h4>
 
 <p align="center">•
@@ -20,7 +20,7 @@
 
 ## Demo
 
-Here is a working live demo [here](https://defimarket.vercel.app/)
+Here is a working live demo [here](https://BlockMart.vercel.app/)
 
 ## Transak Demo
 
@@ -109,6 +109,6 @@ Whether you use this project, have learned something from it, or just like it, p
 
 Or
 
-<a href="https://buymeacoffee.com/DeFiMarket">
+<a href="https://buymeacoffee.com/BlockMart">
    <img width="300px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Buy_Me_a_Coffee_Logo.png/1280px-Buy_Me_a_Coffee_Logo.png">
 </a>

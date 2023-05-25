@@ -12,6 +12,7 @@ const HeaderSearch: React.FC<HeaderSearchProps> = () => {
 
   return (
     <OnOutsideClick opened={resultsOpen} onClose={closeResults}>
+    {/* // <OnOutsideClick> */}
       <div
         className="py-[0.33rem] pr-[0.15rem] pl-[0.66rem] bg-white
         shadow-md rounded-lg text-sm flex items-center relative
@@ -21,8 +22,8 @@ const HeaderSearch: React.FC<HeaderSearchProps> = () => {
         <input
           type="text"
           placeholder="Search..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
+          // value={searchQuery}
+          // onChange={(e) => setSearchQuery(e.target.value)}
           className="bg-none border-none flex-grow px-2 focus:outline-none
         placeholder-[#1a1a2c] placeholder-opacity-50"
         />

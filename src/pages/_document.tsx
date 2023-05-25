@@ -7,7 +7,7 @@ class Document extends NextDocument {
         <Head>
           <meta
             name="description"
-            content="DeFiMarket, a decentralized marketplace."
+            content="BlockMart, a decentralized marketplace."
           />
           <link rel="icon" href="/icons/favicon.ico" />
         </Head>

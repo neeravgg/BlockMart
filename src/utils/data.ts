@@ -32,10 +32,10 @@ export const currency = ["$ - USD", "₹ - INR", "£ - GBP", "€ - EUR", "¥ - 
 export const footerLinks = [
   {
     title: "Get to Know Us",
-    list: ["About DefiMarket", "Connect with Us", "Donation"],
+    list: ["About BlockMart", "Connect with Us", "Donation"],
   },
   {
-    title: "DefiMarket Payment",
+    title: "BlockMart Payment",
     list: ["Tokens enlisted", "Stripe"],
   },
   {
