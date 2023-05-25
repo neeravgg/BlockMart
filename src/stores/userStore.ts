@@ -16,13 +16,13 @@ class UserStore {
   loadUserDetails = (email: string) => {
     store.commonStore.setAppLoading(true);
 
-    onSnapshot(doc(db, "users", email), (snapshot) => {
-      if (snapshot.exists()) {
-        runInAction(() => {
-          this.userDetails = snapshot.data() as UserDetails;
-        });
-      }
-    });
+    // onSnapshot(doc(db, "users", email), (snapshot) => {
+    //   if (snapshot.exists()) {
+    //     runInAction(() => {
+    //       this.userDetails = snapshot.data() as UserDetails;
+    //     });
+    //   }
+    // });
 
     store.commonStore.setAppLoading(false);
   };
