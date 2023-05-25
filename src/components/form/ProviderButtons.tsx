@@ -12,7 +12,7 @@ const ProviderButtons: React.FC<ProviderButtonsProps> = ({ providers }) => {
 
   return (
     <>
-      {Object.values(providers).map((provider) => {
+      {Object.values(providers ?? {}).map((provider) => {
         if (provider.id === "credentials") {
           return null;
         }
