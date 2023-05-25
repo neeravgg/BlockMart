@@ -11,6 +11,7 @@ class Document extends NextDocument {
           />
           <link rel="icon" href="/icons/favicon.ico" />
         </Head>
+        <script src="//code.tidio.co/zpidy7bujlddcr3qtjvqs5djijuu5mzs.js" async></script>
         <body>
           <Main />
           <NextScript />

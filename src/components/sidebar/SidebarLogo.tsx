@@ -1,4 +1,5 @@
 import { observer } from "mobx-react-lite";
+import Link from "next/link";
 import { useStore } from "stores/store";
 
 interface SidebarLogoProps {}
@@ -8,6 +9,7 @@ const SidebarLogo: React.FC<SidebarLogoProps> = () => {
 
   return (
     // eslint-disable-next-line @next/next/no-img-element
+   
     <img
       loading="lazy"
       src="/icons/icon.jpg"
@@ -19,6 +21,7 @@ const SidebarLogo: React.FC<SidebarLogoProps> = () => {
         sidebarActive && "!translate-x-0 !shadow-none"
       }`}
     />
+  
   );
 };
 

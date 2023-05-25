@@ -35,7 +35,7 @@ const Product: React.FC<ProductProps> = ({ product }) => {
         router.push(`/product/${product.id}`);
       }}
       className="w-3/4 bg-[#1a1a2c] rounded-lg shadow-md flex flex-col
-      transition-all duration-200 transform hover:scale-105 hover:shadow-lg"
+      transition-all duration-500 ease-in-out transform bg-center bg-cover"
     >
       <ProductImage product={product} />
       <ProductInfo product={product} />
