@@ -1,5 +1,6 @@
 import AppLayout from "components/layouts/AppLayout";
 import DefaultLayout from "components/layouts/DefaultLayout";
+import { Session } from "next-auth";
 import { Provider as AuthProvider } from "next-auth/client";
 import { AppProps } from "next/app";
 import "react-toastify/dist/ReactToastify.min.css";
@@ -16,9 +17,14 @@ export const getLibrary = (provider: any): ethers.providers.Web3Provider => {
   return library;
 };
 
-const App = ({ Component, pageProps }: AppProps) => {
+const App = ({
+  Component,
+  pageProps,
+}: AppProps<{
+  session: Session;
+}>) => {
   return (
-    <AuthProvider session={pageProps.session}>
+    <AuthProvider session={pageProps?.session}>
       <StoreContext.Provider value={store}>
         <Web3ReactProvider getLibrary={getLibrary}>
           <DefaultLayout>
