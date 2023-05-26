@@ -20,15 +20,15 @@ const PaymentItems: React.FC<PaymentItemsProps> = () => {
       <PaymentItem title={"Delivery Charges"} price={6.99} />
       <hr className="bg-[#acacad] my-4" />
       <PaymentItem title={"Total"} price={(cartTotal + 6.99).toFixed(2)} />
-      <PaymentItem
+      {/* <PaymentItem
         title={"Tax"}
         quantity={"+5%"}
         price={(cartTotal * 0.05).toFixed(2)}
-      />
+      /> */}
       <hr className="bg-[#acacad] my-4" />
       <PaymentItem
         title={"Grand Total"}
-        price={(cartTotal + cartTotal * 0.05 + 6.99).toFixed(2)}
+        price={(cartTotal * 0.00055 ).toFixed(2)}
         total
       />
     </div>

@@ -1,7 +1,7 @@
 import FormCheck from "components/form/FormCheck";
 import { observer } from "mobx-react-lite";
 import { useStore } from "stores/store";
-import PaymentCard from "./PaymentCard";
+// import PaymentCard from "./PaymentCard";
 import PaymentError from "./PaymentError";
 import PaymentShippingDetails from "./PaymentShippingDetails";
 
@@ -17,22 +17,16 @@ const PaymentMethod: React.FC<PaymentMethodProps> = () => {
         Choose a payment method and verify your details to successfully place
         the order.
       </p>
-      {paymentMethod === "card" && <PaymentCard />}
+      {/* {paymentMethod === "card" && <PaymentCard />} */}
       {error && <PaymentError error={error} />}
       <FormCheck
         name="method"
-        label="Cash on Delivery"
+        label="Ethirium"
         type="radio"
         value={paymentMethod === "card"}
         onClick={() => setPaymentMethod("card")}
       />
-      <FormCheck
-        name="method"
-        label="Cash on Delivery"
-        type="radio"
-        value={paymentMethod === "cash"}
-        onClick={() => setPaymentMethod("cash")}
-      />
+     
       <PaymentShippingDetails />
     </div>
   );

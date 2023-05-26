@@ -6,7 +6,7 @@ const PaymentShippingDetails: React.FC<PaymentShippingDetailsProps> = ({}) => {
       className="p-8 my-8 mx-4 w-full rounded-lg
       shadow-sm max-w-[420px]"
     >
-      <h5 className="text-xl font-semibold">Shipping Details</h5>
+      {/* <h5 className="text-xl font-semibold">Shipping Details</h5> */}
     </div>
   );
 };

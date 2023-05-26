@@ -20,7 +20,7 @@ const PaymentItem: React.FC<PaymentItemProps> = ({
       <span className="whitespace-nowrap ml-auto pl-4">
         {total ? (
           <strong className="text-xl font-black">
-            <small>$</small>
+            <small>ETH </small>
             {price}
           </strong>
         ) : (

@@ -79,7 +79,7 @@ class PaymentStore {
 
     store.commonStore.setAppLoading(true);
     this.processing = true;
-
+    
     axios
       .post(`/api/create-checkout-session`, {
         items,
