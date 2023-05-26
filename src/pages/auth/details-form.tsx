@@ -16,19 +16,22 @@ interface RegisterPageProps {
 const detailsForm: React.FC<RegisterPageProps> = ({ providers }) => {
   const { setAppLoading } = useStore().commonStore;
   const [isLogged, setIsLogged] = useState<boolean>(false);
-  const { cart } = useStore().cartStore;
+  const { clearCart } = useStore().cartStore;
 
   const validationSchema = Yup.object({
     name: Yup.string().required("Name is required"),
     address: Yup.string().required("Address is required"),
     phone: Yup.string().required("Phone is required"),
   });
-  const handleSubmitStatus = () => {
+  const handleSubmitStatus = (e) => {
     setAppLoading(true);
+
+    e.preventDefault();
     setTimeout(() => {
       setIsLogged(true);
       setAppLoading(false);
-    }, 2000);
+      clearCart();
+    }, 5000);
   };
   return (
     <>
@@ -57,8 +60,8 @@ const detailsForm: React.FC<RegisterPageProps> = ({ providers }) => {
           >
             {({ errors }) => (
               <Form
-                onSubmit={() => {
-                  handleSubmitStatus();
+                onSubmit={(e) => {
+                  handleSubmitStatus(e);
                 }}
                 autoComplete="off"
               >
